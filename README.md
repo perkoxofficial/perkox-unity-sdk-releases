@@ -26,14 +26,15 @@ The official **Perkox Offerwall SDK for Unity** enables game developers to integ
 2. Click the **`+`** icon in the top-left corner and select **Add package from git URL...**
 3. Enter:
    ```text
-   https://github.com/perkoxofficial/perkox-unity-sdk.git
+   https://github.com/perkoxofficial/perkox-unity-sdk-releases.git
    ```
+   *(Or target a specific release tag: `https://github.com/perkoxofficial/perkox-unity-sdk-releases.git#v2.0.0`)*
 4. Click **Add**. Unity will automatically download and import the SDK into your project.
 
 ### Method 2: `.unitypackage`
 
-1. Download the latest `Perkox-Unity-SDK-vX.X.X.unitypackage` from [Releases](https://github.com/perkoxofficial/perkox-unity-sdk-releases/releases).
-2. Drag and drop the `.unitypackage` into your open Unity project.
+1. Download the latest `Perkox-Unity-SDK-v2.0.0.unitypackage` from [Releases](https://github.com/perkoxofficial/perkox-unity-sdk-releases/releases).
+2. Drag and drop the `.unitypackage` into your open Unity project (or go to **Assets** > **Import Package** > **Custom Package...**).
 3. Click **Import**.
 
 ---
