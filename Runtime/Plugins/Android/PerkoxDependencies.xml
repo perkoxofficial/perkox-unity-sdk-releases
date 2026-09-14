@@ -1,0 +1,11 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.perkox:perkox-android-sdk-releases:2.0.8">
+            <repositories>
+                <repository>https://jitpack.io</repository>
+            </repositories>
+        </androidPackage>
+        <androidPackage spec="androidx.core:core-ktx:1.10.1" />
+        <androidPackage spec="com.google.android.gms:play-services-ads-identifier:18.2.0" />
+    </androidPackages>
+</dependencies>

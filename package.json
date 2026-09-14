@@ -1,0 +1,27 @@
+{
+  "name": "com.perkox.sdk",
+  "version": "1.0.0",
+  "displayName": "Perkox Offerwall SDK",
+  "description": "Official Perkox Offerwall SDK for Unity (Android & iOS). Monetize your game with high-converting rewarded offerwalls.",
+  "unity": "2020.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://pub.perkox.com/docs",
+  "changelogUrl": "https://github.com/perkoxofficial/perkox-unity-sdk/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/perkoxofficial/perkox-unity-sdk/blob/main/LICENSE",
+  "keywords": [
+    "perkox",
+    "offerwall",
+    "monetization",
+    "rewards",
+    "admob",
+    "unity",
+    "ads",
+    "games"
+  ],
+  "author": {
+    "name": "Perkox",
+    "email": "support@perkox.com",
+    "url": "https://perkox.com"
+  },
+  "dependencies": {}
+}
