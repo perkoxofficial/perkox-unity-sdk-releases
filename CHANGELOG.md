@@ -2,6 +2,12 @@
 
 All notable changes to the Perkox Unity SDK will be documented in this file.
 
+## [2.0.1] - 2026-09-21
+
+### Changed
+- Updated native Android SDK to v2.0.9 (safe area adjustments and edge-to-edge support).
+- Updated EDM4U Android dependency spec to `com.perkox:perkox-android-sdk-releases:2.0.9`.
+
 ## [2.0.0] - 2026-09-14
 
 ### Added
