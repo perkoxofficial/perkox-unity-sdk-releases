@@ -24,7 +24,7 @@ The official **Perkox Offerwall SDK for Unity** enables game developers to integ
 
 1. In Unity, open **Window** > **Package Manager**.
 2. Click the **`+`** icon in the top-left corner and select **Add package from git URL...**
-3. Enter:
+3. Enter the public release repository URL:
    ```text
    https://github.com/perkoxofficial/perkox-unity-sdk-releases.git
    ```

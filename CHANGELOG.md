@@ -2,6 +2,20 @@
 
 All notable changes to the Perkox Unity SDK will be documented in this file.
 
+## [2.0.2] - 2026-09-30
+
+### Changed
+- Updated native Android SDK to v2.0.11 (dynamic reward payload preservation & pending rewards auto-sync).
+- Updated native iOS SDK to v2.0.13 (dynamic reward payload preservation & pending rewards auto-sync).
+- Updated EDM4U Android dependency spec to `com.perkox:perkox-android-sdk-releases:2.0.11`.
+- Removed photo, camera, and storage permissions from native binaries.
+
+## [2.0.1] - 2026-09-21
+
+### Changed
+- Updated native Android SDK to v2.0.9 (safe area adjustments and edge-to-edge support).
+- Updated EDM4U Android dependency spec to `com.perkox:perkox-android-sdk-releases:2.0.9`.
+
 ## [2.0.0] - 2026-09-14
 
 ### Added
