@@ -24,7 +24,7 @@ The official **Perkox Offerwall SDK for Unity** enables game developers to integ
 
 1. In Unity, open **Window** > **Package Manager**.
 2. Click the **`+`** icon in the top-left corner and select **Add package from git URL...**
-3. Enter:
+3. Enter the public release repository URL:
    ```text
    https://github.com/perkoxofficial/perkox-unity-sdk-releases.git
    ```
@@ -101,11 +101,13 @@ public class GameManager : MonoBehaviour
 
     private void HandleRewardReceived(PerkoxReward reward)
     {
-        // Access raw or typed reward fields
-        double payout = reward.GetDouble("payout", 0);
-        string currency = reward.GetString("currency", "Coins");
+        // Access typed or dynamic server fields
+        double amount = reward.Amount;
+        string txid = reward.TxId;
+        string clickId = reward.GetString("click_id", "");
+        string offerId = reward.GetString("offer_id", "");
 
-        Debug.Log($"[Game] User earned reward: {payout} {currency}!");
+        Debug.Log($"[Game] Reward earned: {amount} pts! TxID: {txid}, Click: {clickId}, Offer: {offerId}");
         // Add coins/gems to player balance
     }
 
@@ -136,6 +138,23 @@ public void OnOfferwallButtonClicked()
 {
     PerkoxSDK.ShowOfferwall();
 }
+```
+
+---
+
+### ⚡ 4. Offline & Pending Rewards Auto-Sync
+
+When players complete offers outside of the game while your application is closed or suspended, rewards are **never lost**:
+
+1. **Automatic Sync:** When `PerkoxSDK.ShowOfferwall()` is called, pending rewards are automatically fetched, delivered to `OnRewardReceived`, and acknowledged back to the server (`POST /rewards/claim`) to prevent duplicate crediting.
+2. **Explicit Background Sync:** You can also check for rewards on startup without opening the offerwall UI:
+
+```csharp
+PerkoxSDK.SyncPendingRewards(appId, sdkKey, "player_user_98765", beta: false, (pendingRewards) => {
+    foreach (var reward in pendingRewards) {
+        Debug.Log($"Synced offline reward: {reward.Amount} pts (TxID: {reward.TxId})");
+    }
+});
 ```
 
 ---
