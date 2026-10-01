@@ -4,7 +4,8 @@ const crypto = require('crypto');
 const { execSync } = require('child_process');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const PKG_NAME = 'Perkox-Unity-SDK-v2.0.0.unitypackage';
+const pkg = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'package.json'), 'utf8'));
+const PKG_NAME = `Perkox-Unity-SDK-v${pkg.version}.unitypackage`;
 const OUTPUT_PATH = path.join(ROOT_DIR, PKG_NAME);
 const TEMP_BUILD_DIR = path.join(ROOT_DIR, '.tmp_package_build');
 
