@@ -1,0 +1,5 @@
+{
+  "image": "alpine:3.20",
+  "command": "test -f Perkox-Unity-SDK-v2.0.3.unitypackage && tar tzf Perkox-Unity-SDK-v2.0.3.unitypackage >/dev/null && echo 'unitypackage intact'",
+  "why": "Release artifact repo: a .unitypackage is a gzipped tar, so verify it unpacks."
+}
