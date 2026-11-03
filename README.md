@@ -203,3 +203,9 @@ When you hit **Play** inside the Unity Editor:
 
 This SDK is distributed under the [MIT License](LICENSE).
 For support and dashboard configuration, visit [pub.perkox.com](https://pub.perkox.com) or email `support@perkox.com`.
+
+
+## CI
+
+This repo requires a green **`ovh-ci`** check (self-hosted CI on OVH + Mac Mini)
+before a PR can merge. No GitHub Actions. See the org `CONTRIBUTING.md`.
